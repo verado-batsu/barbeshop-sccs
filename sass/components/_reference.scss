@@ -5,7 +5,6 @@
 
 	@include font-line(11px, 15px);
 	font-weight: 600;
-	letter-spacing: 0.1em;
 	text-transform: uppercase;
 	color: $quaternary-text-color;
 
@@ -25,4 +24,21 @@
 
 .dark-reference {
 	color: $primary-text-color;
+
+	&::before {
+		content: "";
+		margin-right: 20px;
+		height: 1px;
+		width: 60px;
+
+		background-color: $primary-text-color;
+	}
+}
+
+.hero__reference {
+	letter-spacing: 0.1em;
+}
+
+.portfolio__reference {
+	margin-bottom: 71px;
 }

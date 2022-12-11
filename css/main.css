@@ -128,7 +128,6 @@ body {
   font-size: 11px;
   line-height: 1.3636363636;
   font-weight: 600;
-  letter-spacing: 0.1em;
   text-transform: uppercase;
   color: #ffffff;
 }
@@ -146,6 +145,21 @@ body {
 
 .dark-reference {
   color: #303030;
+}
+.dark-reference::before {
+  content: "";
+  margin-right: 20px;
+  height: 1px;
+  width: 60px;
+  background-color: #303030;
+}
+
+.hero__reference {
+  letter-spacing: 0.1em;
+}
+
+.portfolio__reference {
+  margin-bottom: 71px;
 }
 
 .header {
@@ -187,7 +201,6 @@ body {
 
 .hero__title {
   margin-bottom: 20px;
-  font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 48px;
   line-height: 1.1666666667;
@@ -200,4 +213,33 @@ body {
   line-height: 1.625;
   letter-spacing: 0.02em;
   color: #9da4bd;
+}
+
+.about {
+  padding: 84px 0;
+}
+
+.about__title {
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.1785714286;
+  letter-spacing: 0.05em;
+  color: #303030;
+}
+
+.about__descrp {
+  margin-bottom: 20px;
+  font-size: 16px;
+  line-height: 1.625;
+  letter-spacing: 0.02em;
+  color: #555555;
+}
+
+.about__text {
+  margin-bottom: 40px;
+  font-size: 14px;
+  line-height: 1.8571428571;
+  letter-spacing: 0.02em;
+  color: #555555;
 }/*# sourceMappingURL=main.css.map */

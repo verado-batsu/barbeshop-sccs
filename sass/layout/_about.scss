@@ -1,0 +1,33 @@
+.about {
+	padding: 84px 0;
+}
+
+.about__title {
+	margin-bottom: 20px;
+
+	font-weight: 700;
+	@include font-line(28px, 33px);
+	letter-spacing: 0.05em;
+	color: $primary-text-color;
+}
+
+.about__descrp {
+	margin-bottom: 20px;
+
+	@include font-line(16px, 26px);
+	letter-spacing: 0.02em;
+	color: $tertiary-text-color;
+}
+
+.about__text {
+	margin-bottom: 40px;
+
+	@include font-line($line-height: 26px);
+	letter-spacing: 0.02em;
+	color: $tertiary-text-color;
+}
+
+.btn {
+}
+.white-btn {
+}
