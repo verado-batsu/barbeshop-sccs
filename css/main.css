@@ -322,4 +322,36 @@ body {
 
 .reviews {
   padding: 84px 0;
+}
+
+.reviews__title {
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.1666666667;
+  letter-spacing: 0.05em;
+  color: #303030;
+}
+
+.reviews__descrp {
+  margin-bottom: 44px;
+  font-size: 18px;
+  line-height: 1.6666666667;
+  letter-spacing: 0.02em;
+  color: #555555;
+}
+
+.reviews__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.reviews__item {
+  padding: 20px 0;
+  width: calc((100% - 30px) / 2);
+  text-align: center;
+  background-color: #f7f7f7;
 }/*# sourceMappingURL=main.css.map */
