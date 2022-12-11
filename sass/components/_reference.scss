@@ -1,0 +1,28 @@
+.reference {
+	display: flex;
+	align-items: center;
+	margin-bottom: 20px;
+
+	@include font-line(11px, 15px);
+	font-weight: 600;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+	color: $quaternary-text-color;
+
+	&::before {
+		content: "";
+		margin-right: 20px;
+		height: 1px;
+		width: 60px;
+
+		background-color: $secondary-text-color-transp;
+	}
+}
+
+.light-reference {
+	color: $secondary-text-color-transp;
+}
+
+.dark-reference {
+	color: $primary-text-color;
+}

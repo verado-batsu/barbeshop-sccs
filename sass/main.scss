@@ -3,10 +3,15 @@
 
 // utils
 @import "./utils/visually-hidden";
+@import "./utils/variables";
 
 // components
-@import "./components/container";
 @import "./components/body";
+@import "./components/line-height-calc";
+@import "./components/container";
+@import "./components/reference";
 
-// layuot
+// layout
 @import "./layout/header";
+
+@import "./layout/hero";

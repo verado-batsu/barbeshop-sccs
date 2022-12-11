@@ -1,0 +1,23 @@
+.hero {
+	padding: 208px 0;
+
+	background-image: url(../image/hero/phone/slider-3.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+.hero__title {
+	margin-bottom: 20px;
+
+	font-family: "Raleway", sans-serif;
+	font-weight: 700;
+	@include font-line(48px, 56px);
+	letter-spacing: 0.05em;
+	color: $quaternary-text-color;
+}
+.hero__descrp {
+	@include font-line(16px, 26px);
+	letter-spacing: 0.02em;
+	color: $secondary-text-color;
+}
