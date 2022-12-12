@@ -23,12 +23,52 @@
 	display: flex;
 	flex-wrap: wrap;
 }
+
 .reviews__item {
 	padding: 20px 0;
 	width: calc((100% - 30px) / 2);
+	height: 133px;
 
 	text-align: center;
 	background-color: $light-bg-color;
+
+	&:nth-child(2) {
+		margin-top: 35px;
+		margin-bottom: 30px;
+	}
+
+	&:nth-child(3) {
+		margin-top: -35px;
+	}
+
+	&:not(:nth-child(2n)) {
+		margin-right: 30px;
+	}
 }
+
 .reviews__number {
+	display: inline-flex;
+	align-items: flex-start;
+
+	margin-bottom: 6px;
+
+	font-weight: 700;
+	@include font-line(42px, 57px);
+	letter-spacing: 0.05em;
+	color: $primary-text-color;
+
+	sup {
+		padding-top: 14px;
+		padding-left: 4px;
+
+		font-weight: 600;
+		@include font-line(16px, 22px);
+		color: $accent-color;
+	}
+}
+
+.reviews__number-descrp {
+	font-weight: 600;
+	@include font-line(11px, 15px);
+	color: $primary-text-color;
 }
