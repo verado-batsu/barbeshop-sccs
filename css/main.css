@@ -395,4 +395,73 @@ body {
   font-size: 11px;
   line-height: 1.3636363636;
   color: #303030;
+}
+
+.barbers {
+  padding: 84px 0;
+  background-color: #f7f7f7;
+}
+
+.barbers__title {
+  margin-bottom: 44px;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.1666666667;
+  letter-spacing: 0.05em;
+  color: #303030;
+}
+
+.barbers__item:not(:last-child) {
+  margin-bottom: 64px;
+}
+
+.barbers-wrapper {
+  padding-top: 30px;
+  text-align: center;
+}
+
+.barbers__name {
+  margin-bottom: 8px;
+  font-size: 18px;
+  line-height: 1.3888888889;
+  letter-spacing: 0.02em;
+  color: #303030;
+}
+
+.barbers__position {
+  margin-bottom: 30px;
+  font-size: 14px;
+  line-height: 1.7857142857;
+  letter-spacing: 0.02em;
+  color: #ff6c00;
+}
+
+.barbers__social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+}
+
+.barbers__social-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 12px;
+  color: #303030;
+  background-color: #ffffff;
+  border-radius: 50%;
+}
+.barbers__social-link:hover, .barbers__social-link:focus {
+  color: #ff6c00;
+}
+
+.barbers__svg {
+  fill: currentColor;
 }/*# sourceMappingURL=main.css.map */
