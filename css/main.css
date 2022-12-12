@@ -464,4 +464,78 @@ body {
 
 .barbers__svg {
   fill: currentColor;
+}
+
+.portfolio {
+  padding: 84px 0;
+}
+
+.portfolio__item:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+.booking {
+  padding: 84px 0;
+  background-color: #191c26;
+}
+
+.booking__title {
+  margin-bottom: 44px;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.1666666667;
+  letter-spacing: 0.05em;
+  text-align: center;
+  color: #ffffff;
+}
+
+.booking__label {
+  position: relative;
+  display: block;
+  margin-bottom: 44px;
+  text-align: center;
+  color: rgba(157, 164, 189, 0.4);
+  text-transform: uppercase;
+}
+.booking__label:focus-within {
+  color: #ffffff;
+}
+.booking__label span {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.booking__input {
+  width: 100%;
+  padding-bottom: 8px;
+  padding-left: 60px;
+  background-color: transparent;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.3636363636;
+  letter-spacing: 0.1em;
+  color: currentColor;
+  border-bottom: 1px solid rgba(157, 164, 189, 0.4);
+}
+.booking__input:focus {
+  border-color: #ffffff;
+}
+
+.booking__textarea {
+  height: 76px;
+  width: 100%;
+  padding-top: 16px;
+  overflow: hidden;
+  resize: none;
+  background-color: transparent;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.3636363636;
+  letter-spacing: 0.1em;
+  color: currentColor;
+  border-bottom: 1px solid rgba(157, 164, 189, 0.4);
+}
+.booking__textarea:focus {
+  border-color: #ffffff;
 }/*# sourceMappingURL=main.css.map */

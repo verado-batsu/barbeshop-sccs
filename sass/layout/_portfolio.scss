@@ -1,0 +1,15 @@
+.portfolio {
+	padding: 84px 0;
+}
+
+.portfolio__list {
+}
+
+.portfolio__item {
+	&:not(:last-child) {
+		margin-bottom: 30px;
+	}
+}
+
+.portfolio__img {
+}
