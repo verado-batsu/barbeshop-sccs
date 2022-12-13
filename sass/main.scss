@@ -11,6 +11,8 @@
 @import "./components/container";
 @import "./components/reference";
 @import "./components/title";
+@import "./components/link";
+@import "./components/btn";
 
 // layout
 @import "./layout/header";
@@ -23,3 +25,5 @@
 @import "./layout/portfolio";
 @import "./layout/booking";
 @import "./layout/contacts";
+
+@import "./layout/footer";

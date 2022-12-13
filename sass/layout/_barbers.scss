@@ -66,11 +66,6 @@
 	color: $primary-text-color;
 	background-color: $quaternary-text-color;
 	border-radius: 50%;
-
-	&:hover,
-	&:focus {
-		color: $accent-color;
-	}
 }
 
 .barbers__svg {
