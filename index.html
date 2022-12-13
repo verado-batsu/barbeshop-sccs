@@ -21,7 +21,7 @@
 	<link rel="stylesheet" href="./css/main.min.css">
 </head>
 
-<body>
+<body class="js-menu-body">
 
 	<!-- Header -->
 	<header class="header">
@@ -32,54 +32,62 @@
 				</svg>
 			</a>
 
-			<button class="menu__button" type="button">
-				<svg width="40" height="40">
-					<use class="icon-menu" href="./image/svg.svg#icon-menu"></use>
-					<use class="icon-close" href="./image/svg.svg#icon-close"></use>
-				</svg>
-			</button>
-
-			<div class="header__wrapper">
-				<nav class="header__nav nav">
-					<ul class="nav__list">
-						<li class="nav__item">
-							<a class="nav__link" href="">
-								About
-							</a>
-						</li>
-						<li class="nav__item">
-							<a class="nav__link" href="">
-								Services and prices
-							</a>
-						</li>
-						<li class="nav__item">
-							<a class="nav__link" href="">
-								Barbers
-							</a>
-						</li>
-						<li class="nav__item">
-							<a class="nav__link" href="">
-								Contacts
-							</a>
-						</li>
-					</ul>
-				</nav>
-
-				<a class="header__tel" href="tel:+380441111111">+38 044 111 11 11</a>
-
-				<button class="header__btn btn" type="button">
-					online-booking
+			<div class="js-menu-container">
+				<button class="menu__button js-open-menu" type="button" aria-expanded="false">
+					<svg width="40" height="40">
+						<use class="icon-menu" href="./image/svg.svg#icon-menu"></use>
+					</svg>
 				</button>
 
-				<ul class="header__social social">
-					<li class="social__item">
-						<a class="social__link" href="#" rel="noopener noreferrer nofollow"
-							target="_blank">Instagram</a>
-					</li>
-					<li class="social__item">
-						<a class="social__link" href="#" rel="noopener noreferrer nofollow" target="_blank">Youtube</a>
-					</li>
-				</ul>
+				<div class="header__wrapper">
+					<button class="menu__button-close js-close-menu" type="button">
+						<svg width="40" height="40">
+							<use class="icon-close" href="./image/svg.svg#icon-close"></use>
+						</svg>
+					</button>
+
+					<nav class="header__nav nav">
+						<ul class="nav__list">
+							<li class="nav__item">
+								<a class="nav__link" href="">
+									About
+								</a>
+							</li>
+							<li class="nav__item">
+								<a class="nav__link" href="">
+									Services and prices
+								</a>
+							</li>
+							<li class="nav__item">
+								<a class="nav__link" href="">
+									Barbers
+								</a>
+							</li>
+							<li class="nav__item">
+								<a class="nav__link" href="">
+									Contacts
+								</a>
+							</li>
+						</ul>
+					</nav>
+
+					<a class="header__tel" href="tel:+380441111111">+38 044 111 11 11</a>
+
+					<button class="header__btn btn" type="button">
+						online-booking
+					</button>
+
+					<ul class="header__social social">
+						<li class="social__item">
+							<a class="social__link" href="#" rel="noopener noreferrer nofollow"
+								target="_blank">Instagram</a>
+						</li>
+						<li class="social__item">
+							<a class="social__link" href="#" rel="noopener noreferrer nofollow"
+								target="_blank">Youtube</a>
+						</li>
+					</ul>
+				</div>
 			</div>
 		</div>
 	</header>
@@ -553,6 +561,8 @@
 			</ul>
 		</div>
 	</footer>
+
+	<script src="./js/mobile-menu.js" type="module"></script>
 </body>
 
 </html>
