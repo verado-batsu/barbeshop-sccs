@@ -2,3 +2,7 @@ body {
 	font-family: "Open Sans", sans-serif;
 	color: $primary-text-color;
 }
+
+.body--is-open {
+	overflow: hidden;
+}
