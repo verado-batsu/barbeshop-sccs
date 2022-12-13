@@ -1,3 +1,41 @@
 .btn {
-	transition: color 250ms $timing-function;
+	padding: 12px 20px;
+	min-width: 160px;
+	align-self: center;
+
+	background-color: transparent;
+	transition: color 250ms $timing-function, background-color 250ms $timing-function;
+	border: 1px solid $accent-color;
+	border-radius: 25px;
+
+	font-weight: 600;
+	@include font-line(12px, 16px);
+	letter-spacing: 0.09em;
+	text-transform: uppercase;
+
+	text-align: center;
+}
+
+.dark-btn {
+	color: $quaternary-text-color;
+
+	&:hover,
+	&:focus {
+		background-color: $accent-color;
+	}
+}
+
+.white-btn {
+	color: $primary-text-color;
+
+	&:hover,
+	&:focus {
+		background-color: $accent-color;
+		color: $quaternary-text-color;
+	}
+}
+
+.container-btn-center {
+	display: flex;
+	flex-direction: column;
 }
