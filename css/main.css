@@ -162,6 +162,10 @@ body {
   margin-bottom: 71px;
 }
 
+.title {
+  font-family: "Raleway", sans-serif;
+}
+
 .header {
   position: absolute;
   top: 0;
@@ -411,6 +415,19 @@ body {
   color: #303030;
 }
 
+.barbers__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .barbers__item:not(:last-child) {
   margin-bottom: 64px;
 }
@@ -470,6 +487,19 @@ body {
   padding: 84px 0;
 }
 
+.portfolio__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .portfolio__item:not(:last-child) {
   margin-bottom: 30px;
 }
@@ -495,6 +525,8 @@ body {
   margin-bottom: 44px;
   text-align: center;
   color: rgba(157, 164, 189, 0.4);
+  font-size: 11px;
+  line-height: 1.3636363636;
   text-transform: uppercase;
 }
 .booking__label:focus-within {
@@ -538,4 +570,54 @@ body {
 }
 .booking__textarea:focus {
   border-color: #ffffff;
+}
+
+.contacts {
+  padding: 84px 0;
+  background-image: url(../image/contacts/contacts_bg.png);
+  background-color: #191c26;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.contacts__title {
+  margin-bottom: 40px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.1666666667;
+  letter-spacing: 0.05em;
+  color: #ffffff;
+}
+
+.contacts__address {
+  margin-bottom: 40px;
+  font-style: normal;
+}
+
+.address__item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.address__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #9da4bd;
+}
+
+.address__icon {
+  margin-right: 16px;
+  stroke: currentColor;
+}
+
+.contacts__time {
+  font-size: 18px;
+  line-height: 1.6666666667;
+  letter-spacing: 0.02em;
+  color: #9da4bd;
 }/*# sourceMappingURL=main.css.map */

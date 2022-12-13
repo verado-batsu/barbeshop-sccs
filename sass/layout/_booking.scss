@@ -25,6 +25,7 @@
 	text-align: center;
 	color: rgba(157, 164, 189, 0.4);
 
+	@include font-line(11px, 15px);
 	text-transform: uppercase;
 
 	&:focus-within {
@@ -47,6 +48,7 @@
 	padding-left: 60px;
 
 	background-color: transparent;
+
 	font-weight: 600;
 	@include font-line(11px, 15px);
 	letter-spacing: 0.1em;
