@@ -17,10 +17,10 @@
 
 .header__container {
 	display: flex;
+	justify-content: space-between;
 
 	@media screen and (max-width: 767px) {
 		pointer-events: visible;
-		justify-content: space-between;
 		align-items: center;
 	}
 }
@@ -34,6 +34,10 @@
 
 .logo {
 	fill: $quaternary-text-color;
+
+	@media screen and (min-width: 768px) {
+		fill: $primary-text-color;
+	}
 }
 
 .menu__button {
@@ -87,7 +91,6 @@
 	right: 15px;
 
 	background-color: transparent;
-	color: $primary-text-color;
 	transition: color 250ms $timing-function;
 
 	&:hover,

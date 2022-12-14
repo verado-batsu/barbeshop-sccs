@@ -1,16 +1,64 @@
 .hero {
-	padding: 208px 0;
+	@media screen and (max-width: 767px) {
+		padding: 208px 0;
 
-	background-image: url(../image/hero/phone/slider-3.jpg);
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: cover;
+		background-image: url(../image/hero/phone/slider-3.jpg);
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+	}
+}
 
-	// overflow-x: hidden;
+.hero__container {
+	display: flex;
+	justify-content: space-between;
 }
 
 .hero__social {
-	display: none;
+	@media screen and (max-width: 767px) {
+		display: none;
+	}
+
+	display: flex;
+	align-items: center;
+	padding-top: 38px;
+	padding-right: 40px;
+	gap: 40px;
+
+	writing-mode: vertical-rl;
+	transform: rotate(-180deg);
+
+	&::before {
+		content: "";
+		width: 1px;
+		height: 60px;
+
+		background-color: $primary-text-color;
+	}
+}
+.hero__item {
+}
+.hero__link {
+	font-weight: 600;
+	@include font-line(11px, 15px);
+	letter-spacing: 0.2em;
+	color: $primary-text-color;
+}
+.link {
+}
+
+.hero-wrapper {
+	@media screen and (min-width: 768px) {
+		height: 680px;
+		max-width: 570px;
+		padding-top: 272px;
+		padding-bottom: 237px;
+
+		background-image: url(../image/hero/tablet/slider-3_tablet.jpg);
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+	}
 }
 
 .hero__title {
