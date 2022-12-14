@@ -11,7 +11,6 @@
 
 .hero__container {
 	display: flex;
-	justify-content: space-between;
 }
 
 .hero__social {
@@ -64,6 +63,19 @@
 		background-position: center;
 		background-size: cover;
 	}
+
+	@media screen and (min-width: 1200px) {
+		height: 680px;
+		min-width: 1070px;
+		padding-top: 272px;
+		padding-bottom: 208px;
+		padding-left: 100px;
+
+		background-image: url(../image/hero/desktop/slider-3_desktop.jpg);
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+	}
 }
 
 .hero__title {
@@ -73,9 +85,17 @@
 	@include font-line(48px, 56px);
 	letter-spacing: 0.05em;
 	color: $quaternary-text-color;
+
+	@media screen and (min-width: 1200px) {
+		@include font-line(72px, 85px);
+	}
 }
 .hero__descrp {
 	@include font-line(16px, 26px);
 	letter-spacing: 0.02em;
 	color: $secondary-text-color;
+
+	@media screen and (min-width: 1200px) {
+		@include font-line(18px, 30px);
+	}
 }
