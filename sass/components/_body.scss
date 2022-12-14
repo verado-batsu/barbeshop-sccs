@@ -1,8 +1,18 @@
+html {
+	// видаляє горизонтальний скрол
+	// width: 100%;
+	// max-width: 100%;
+	// overflow-x: hidden;
+}
+
 body {
 	font-family: "Open Sans", sans-serif;
 	color: $primary-text-color;
 
-	overflow-x: hidden;
+	// видаляє горизонтальний скрол
+	// width: 100%;
+	// max-width: 100%;
+	// overflow-x: hidden;
 }
 
 .body--is-open {

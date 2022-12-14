@@ -110,7 +110,6 @@ h6 {
 body {
   font-family: "Open Sans", sans-serif;
   color: #303030;
-  overflow-x: hidden;
 }
 
 .body--is-open {
@@ -300,8 +299,11 @@ body {
   top: 0;
   left: 0;
   width: 100%;
+  height: 100%;
   padding-top: 40px;
   background-color: transparent;
+  overflow: hidden;
+  pointer-events: none;
 }
 
 .header__container {
@@ -314,6 +316,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  pointer-events: visible;
 }
 
 .logo {
@@ -371,10 +374,10 @@ body {
 
 .menu {
   opacity: 1;
-  -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .menu__button--is-open {
@@ -384,7 +387,6 @@ body {
   width: 100%;
   height: 100%;
   overflow-y: scroll;
-  overflow-x: hidden;
   background-color: rgba(25, 28, 38, 0.2);
 }
 .menu__button--is-open .icon-menu {
