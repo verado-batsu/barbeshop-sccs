@@ -23,7 +23,10 @@
 	align-items: center;
 	padding-top: 38px;
 	padding-right: 40px;
+	padding-left: 68px;
 	gap: 40px;
+
+	width: 120px;
 
 	writing-mode: vertical-rl;
 	transform: rotate(-180deg);
@@ -50,9 +53,11 @@
 .hero-wrapper {
 	@media screen and (min-width: 768px) {
 		height: 680px;
-		max-width: 570px;
+		min-width: 570px;
 		padding-top: 272px;
 		padding-bottom: 237px;
+		padding-left: 120px;
+		padding-right: 90px;
 
 		background-image: url(../image/hero/tablet/slider-3_tablet.jpg);
 		background-repeat: no-repeat;

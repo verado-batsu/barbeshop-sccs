@@ -13,22 +13,34 @@
 		height: 100%;
 		padding-top: 40px;
 	}
+
+	@media screen and (min-width: 768px) {
+		z-index: 1;
+	}
 }
 
 .header__container {
-	display: flex;
-	justify-content: space-between;
-
 	@media screen and (max-width: 767px) {
+		display: flex;
+		justify-content: space-between;
+
 		pointer-events: visible;
 		align-items: center;
+	}
+
+	@media screen and (min-width: 768px) {
+		position: relative;
+		// justify-content: flex-end;
 	}
 }
 
 .header__logo {
 	@media screen and (min-width: 768px) {
-		margin-right: 60px;
-		padding: 32px 0;
+		position: absolute;
+		top: 32px;
+		left: 32px;
+
+		// padding: 32px 0;
 	}
 }
 
@@ -80,8 +92,20 @@
 
 	@media screen and (min-width: 768px) {
 		display: flex;
+		justify-content: space-between;
+
 		align-items: baseline;
 		padding-top: 40px;
+		padding-left: 140px;
+		padding-right: 20px;
+	}
+
+	@media screen and (min-width: 1200px) {
+		align-items: center;
+
+		padding-top: 52px;
+		padding-left: 220px;
+		padding-right: 20px;
 	}
 }
 
@@ -145,17 +169,26 @@
 
 	@media screen and (min-width: 768px) {
 		display: flex;
-		margin-right: 37px;
 	}
 }
 
 .nav__item {
-	&:not(:last-child) {
-		margin-bottom: 24px;
+	@media screen and (max-width: 767px) {
+		&:not(:last-child) {
+			margin-bottom: 24px;
+		}
 	}
 
 	@media screen and (min-width: 768px) {
-		margin-right: 16px;
+		&:not(:last-child) {
+			margin-right: 16px;
+		}
+	}
+
+	@media screen and (min-width: 768px) {
+		&:not(:last-child) {
+			margin-right: 30px;
+		}
 	}
 }
 
@@ -172,8 +205,16 @@
 }
 
 .header__box {
-	display: flex;
-	flex-direction: column-reverse;
+	@media screen and (min-width: 768px) {
+		display: flex;
+		flex-direction: column-reverse;
+	}
+
+	@media screen and (min-width: 1200px) {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+	}
 }
 
 .header__tel {
@@ -188,11 +229,17 @@
 	letter-spacing: 0.1em;
 	color: $primary-text-color;
 
-	@media screen and (min-width: 768px) {
+	@media screen and (max-width: 1199px) {
 		align-self: flex-end;
+	}
 
+	@media screen and (min-width: 768px) {
 		@include font-line(12px, 16px);
 		color: $quaternary-text-color;
+	}
+
+	@media screen and (min-width: 1200px) {
+		margin-right: 40px;
 	}
 }
 
@@ -201,10 +248,12 @@
 		margin-bottom: 64px;
 	}
 
-	@media screen and (min-width: 768px) {
+	@media screen and (max-width: 1199px) {
 		margin-bottom: 20px;
+	}
+
+	@media screen and (min-width: 768px) {
 		color: $quaternary-text-color;
-		align-self: flex-end;
 	}
 }
 
