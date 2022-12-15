@@ -1,6 +1,10 @@
 .barbers {
 	padding: 84px 0;
 	background-color: $light-bg-color;
+
+	@media screen and (min-width: 768px) {
+		padding: 100px 0;
+	}
 }
 
 .barbers__title {
@@ -44,7 +48,7 @@
 .barbers__position {
 	margin-bottom: 30px;
 
-	@include font-line($line-height: 25px);
+	@include font-line($line-height: 19px);
 	letter-spacing: 0.02em;
 	color: $accent-color;
 }
