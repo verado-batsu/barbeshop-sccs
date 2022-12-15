@@ -4,6 +4,7 @@
 
 .about__container {
 	display: flex;
+	gap: 30px;
 }
 
 .about__list {
@@ -11,12 +12,22 @@
 		display: none;
 	}
 
-	width: calc((100% - 30px) / 2);
+	@media screen and (min-width: 1200px) {
+		display: flex;
+	}
 }
 
 .about__item {
-	&:not(:last-child) {
-		margin-bottom: 30px;
+	@media screen and (max-width: 1199px) {
+		&:not(:last-child) {
+			margin-bottom: 30px;
+		}
+	}
+
+	@media screen and (min-width: 1200px) {
+		&:not(:last-child) {
+			margin-right: 30px;
+		}
 	}
 }
 
@@ -27,6 +38,11 @@
 	@media screen and (min-width: 768px) {
 		width: calc((100% - 30px) / 2);
 	}
+
+	@media screen and (min-width: 1200px) {
+		display: flex;
+		flex-direction: column;
+	}
 }
 
 .about__title {
@@ -36,6 +52,10 @@
 	@include font-line(28px, 33px);
 	letter-spacing: 0.05em;
 	color: $primary-text-color;
+
+	@media screen and (min-width: 1200px) {
+		@include font-line(42px, 49px);
+	}
 }
 
 .about__descrp {
@@ -60,4 +80,13 @@
 	@media screen and (min-width: 768px) {
 		margin-bottom: 77px;
 	}
+
+	@media screen and (min-width: 1200px) {
+		flex-grow: 1;
+		margin-bottom: 42px;
+	}
+}
+
+.about__btn {
+	align-self: flex-start;
 }
