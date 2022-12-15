@@ -1,9 +1,15 @@
 .booking {
 	padding: 84px 0;
-	background-color: $dark-blue-bg-color;
+	// background-color: $dark-blue-bg-color;
 
 	@media screen and (min-width: 768px) {
 		padding: 100px 0;
+	}
+}
+
+.booking__container {
+	@media screen and (min-width: 1200px) {
+		width: calc(100% / 2);
 	}
 }
 

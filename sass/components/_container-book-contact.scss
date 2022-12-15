@@ -1,0 +1,12 @@
+.container-book-contact {
+	@media screen and (min-width: 1200px) {
+		display: flex;
+
+		background-color: linear-gradient(
+			to left,
+			$dark-blue-bg-color 50%,
+			url(../image/contacts/contacts_bg-desktop.png) 50%
+		);
+		background-color: $dark-bg-color;
+	}
+}

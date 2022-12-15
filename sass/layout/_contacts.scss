@@ -1,8 +1,8 @@
 .contacts {
 	padding: 84px 0;
 
-	background-image: url(../image/contacts/contacts_bg.png);
-	background-color: $dark-blue-bg-color;
+	// background-image: url(../image/contacts/contacts_bg.png);
+	// background-color: $dark-blue-bg-color;
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
@@ -10,16 +10,21 @@
 	@media screen and (min-width: 768px) {
 		padding: 100px 0;
 
-		background-image: url(../image/contacts/contacts_bg-tablet.png);
+		// background-image: url(../image/contacts/contacts_bg-tablet.png);
 	}
 }
 
 .contacts__container {
 	@media screen and (min-width: 768px) {
 		display: flex;
-		// gap: 30px;
 		align-items: center;
 		justify-content: space-between;
+	}
+
+	@media screen and (min-width: 1200px) {
+		margin: 0;
+		padding: 0;
+		width: calc(100% / 2);
 	}
 }
 

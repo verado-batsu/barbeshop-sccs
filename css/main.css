@@ -335,6 +335,16 @@ body {
   color: #303030;
 }
 
+@media screen and (min-width: 1200px) {
+  .container-book-contact {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background-color: linear-gradient(to left, #191c26 50%, url(../image/contacts/contacts_bg-desktop.png) 50%);
+    background-color: #111319;
+  }
+}
+
 .header {
   position: absolute;
   top: 0;
@@ -1303,11 +1313,16 @@ body {
 
 .booking {
   padding: 84px 0;
-  background-color: #191c26;
 }
 @media screen and (min-width: 768px) {
   .booking {
     padding: 100px 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .booking__container {
+    width: 50%;
   }
 }
 
@@ -1409,8 +1424,6 @@ body {
 
 .contacts {
   padding: 84px 0;
-  background-image: url(../image/contacts/contacts_bg.png);
-  background-color: #191c26;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -1418,7 +1431,6 @@ body {
 @media screen and (min-width: 768px) {
   .contacts {
     padding: 100px 0;
-    background-image: url(../image/contacts/contacts_bg-tablet.png);
   }
 }
 
@@ -1433,6 +1445,13 @@ body {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contacts__container {
+    margin: 0;
+    padding: 0;
+    width: 50%;
   }
 }
 
