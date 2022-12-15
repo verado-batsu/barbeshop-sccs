@@ -8,10 +8,14 @@
 	background-size: cover;
 
 	@media screen and (min-width: 768px) {
+		padding: 100px 0;
+
 		background-image: url(../image/services/service_tablet.png);
 	}
 
 	@media screen and (min-width: 1200px) {
+		padding: 120px 0;
+
 		background-image: url(../image/services/service_desktop.png);
 	}
 }

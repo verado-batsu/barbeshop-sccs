@@ -388,7 +388,7 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .header__logo {
-    margin-right: 70px;
+    margin-right: 110px;
   }
 }
 
@@ -728,6 +728,7 @@ body {
     padding-top: 272px;
     padding-bottom: 208px;
     padding-left: 100px;
+    padding-right: 526px;
     background-image: url(../image/hero/desktop/slider-3_desktop.jpg);
     background-repeat: no-repeat;
     background-position: center;
@@ -765,6 +766,16 @@ body {
 
 .about {
   padding: 84px 0;
+}
+@media screen and (min-width: 768px) {
+  .about {
+    padding: 100px 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .about {
+    padding: 120px 0;
+  }
 }
 
 .about__container {
@@ -880,11 +891,13 @@ body {
 }
 @media screen and (min-width: 768px) {
   .service {
+    padding: 100px 0;
     background-image: url(../image/services/service_tablet.png);
   }
 }
 @media screen and (min-width: 1200px) {
   .service {
+    padding: 120px 0;
     background-image: url(../image/services/service_desktop.png);
   }
 }
@@ -1018,6 +1031,33 @@ body {
 .reviews {
   padding: 84px 0;
 }
+@media screen and (min-width: 768px) {
+  .reviews {
+    padding: 100px 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .reviews {
+    padding: 120px 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .reviews__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .reviews__wrapper {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+}
 
 .reviews__title {
   margin-bottom: 20px;
@@ -1029,11 +1069,15 @@ body {
 }
 
 .reviews__descrp {
-  margin-bottom: 44px;
   font-size: 18px;
   line-height: 1.6666666667;
   letter-spacing: 0.02em;
   color: #555555;
+}
+@media screen and (max-width: 1199px) {
+  .reviews__descrp {
+    margin-bottom: 44px;
+  }
 }
 
 .reviews__list {
@@ -1042,6 +1086,17 @@ body {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+}
+@media screen and (min-width: 768px) {
+  .reviews__list {
+    padding-left: 240px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .reviews__list {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
 }
 
 .reviews__item {
