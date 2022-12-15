@@ -1415,6 +1415,32 @@ body {
   background-position: center;
   background-size: cover;
 }
+@media screen and (min-width: 768px) {
+  .contacts {
+    padding: 100px 0;
+    background-image: url(../image/contacts/contacts_bg-tablet.png);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .contacts__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .contacts__wrapper {
+    width: 280px;
+  }
+}
 
 .contacts__title {
   margin-bottom: 40px;
@@ -1425,9 +1451,14 @@ body {
   letter-spacing: 0.05em;
   color: #ffffff;
 }
+@media screen and (min-width: 768px) {
+  .contacts__title {
+    text-align: start;
+  }
+}
 
 .contacts__address {
-  margin-bottom: 40px;
+  margin-bottom: 44px;
   font-style: normal;
 }
 
@@ -1443,11 +1474,28 @@ body {
       -ms-flex-align: center;
           align-items: center;
   color: #9da4bd;
+  font-size: 18px;
+  line-height: 1.6666666667;
+  letter-spacing: 0.02em;
+}
+
+.address__map {
+  font-weight: 700;
+}
+
+.address__mail {
+  text-decoration: underline;
 }
 
 .address__icon {
   margin-right: 16px;
   stroke: currentColor;
+}
+
+@media screen and (max-width: 1199px) {
+  .contacts__box {
+    padding-right: 105px;
+  }
 }
 
 .contacts__time {
@@ -1459,6 +1507,7 @@ body {
 
 .footer {
   padding: 44px 0;
+  color: #f7f7f7;
 }
 
 .footer__container {
