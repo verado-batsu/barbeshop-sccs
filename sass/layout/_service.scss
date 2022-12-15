@@ -6,6 +6,19 @@
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
+
+	@media screen and (min-width: 768px) {
+		background-image: url(../image/services/service_tablet.png);
+	}
+
+	@media screen and (min-width: 1200px) {
+		background-image: url(../image/services/service_desktop.png);
+	}
+}
+
+.service__container {
+	display: flex;
+	flex-direction: column;
 }
 
 .service__title {
@@ -15,15 +28,26 @@
 	@include font-line(40px, 47px);
 	letter-spacing: 0.05em;
 	color: $quaternary-text-color;
+
+	@media screen and (min-width: 768px) {
+		@include font-line(42px, 49px);
+	}
 }
 
 .service__list {
 	padding: 30px 0;
 	padding-left: 40px;
 	padding-right: 20px;
+
 	margin-bottom: 44px;
 
 	background: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
+
+	@media screen and (min-width: 768px) {
+		padding: 32px 0;
+		padding-left: 40px;
+		padding-right: 27px;
+	}
 }
 
 .service__item {
@@ -32,9 +56,6 @@
 			margin-bottom: 20px;
 		}
 	}
-}
-
-.item {
 }
 
 .item__table {
@@ -66,6 +87,10 @@
 	@include font-line($line-height: 20px);
 	letter-spacing: 0.02em;
 	color: $secondary-text-color;
+
+	@media screen and (min-width: 768px) {
+		@include font-line(18px, 30px);
+	}
 }
 
 .price__descrp {
@@ -74,4 +99,8 @@
 	@include font-line($line-height: 20px);
 	letter-spacing: 0.02em;
 	color: $secondary-text-color;
+
+	@media screen and (min-width: 768px) {
+		@include font-line(18px, 30px);
+	}
 }

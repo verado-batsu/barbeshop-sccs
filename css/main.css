@@ -878,6 +878,26 @@ body {
   background-position: center;
   background-size: cover;
 }
+@media screen and (min-width: 768px) {
+  .service {
+    background-image: url(../image/services/service_tablet.png);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .service {
+    background-image: url(../image/services/service_desktop.png);
+  }
+}
+
+.service__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
 
 .service__title {
   margin-bottom: 44px;
@@ -887,6 +907,12 @@ body {
   letter-spacing: 0.05em;
   color: #ffffff;
 }
+@media screen and (min-width: 768px) {
+  .service__title {
+    font-size: 42px;
+    line-height: 1.1666666667;
+  }
+}
 
 .service__list {
   padding: 30px 0;
@@ -895,6 +921,13 @@ body {
   margin-bottom: 44px;
   background: -webkit-gradient(linear, left top, left bottom, from(#171a24), to(rgba(23, 26, 36, 0.2)));
   background: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
+}
+@media screen and (min-width: 768px) {
+  .service__list {
+    padding: 32px 0;
+    padding-left: 40px;
+    padding-right: 27px;
+  }
 }
 
 @media screen and (max-width: 1199px) {
@@ -935,6 +968,12 @@ body {
   letter-spacing: 0.02em;
   color: #9da4bd;
 }
+@media screen and (min-width: 768px) {
+  .price__title {
+    font-size: 18px;
+    line-height: 1.6666666667;
+  }
+}
 
 .price__descrp {
   -webkit-box-ordinal-group: 2;
@@ -944,6 +983,12 @@ body {
   line-height: 1.4285714286;
   letter-spacing: 0.02em;
   color: #9da4bd;
+}
+@media screen and (min-width: 768px) {
+  .price__descrp {
+    font-size: 18px;
+    line-height: 1.6666666667;
+  }
 }
 
 .reviews {
