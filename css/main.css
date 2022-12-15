@@ -929,10 +929,34 @@ body {
     padding-right: 27px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .service__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 30px;
+    background: transparent;
+    padding: 0;
+  }
+}
 
 @media screen and (max-width: 1199px) {
   .service__item:not(:last-child) {
     margin-bottom: 20px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .service__item {
+    width: calc((100% - 30px) / 2);
+    padding: 30px 20px;
+  }
+  .service__item:first-child {
+    background: -webkit-gradient(linear, left top, left bottom, from(#171a24), to(rgba(23, 26, 36, 0.2)));
+    background: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
+  }
+  .service__item:last-child {
+    background: -webkit-gradient(linear, left top, left bottom, from(#090b13), to(rgba(9, 11, 19, 0.2)));
+    background: linear-gradient(180deg, #090b13 0%, rgba(9, 11, 19, 0.2) 100%);
   }
 }
 

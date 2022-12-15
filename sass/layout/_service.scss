@@ -48,12 +48,32 @@
 		padding-left: 40px;
 		padding-right: 27px;
 	}
+
+	@media screen and (min-width: 1200px) {
+		display: flex;
+		gap: 30px;
+		background: transparent;
+		padding: 0;
+	}
 }
 
 .service__item {
 	@media screen and (max-width: 1199px) {
 		&:not(:last-child) {
 			margin-bottom: 20px;
+		}
+	}
+
+	@media screen and (min-width: 1200px) {
+		width: calc((100% - 30px) / 2);
+		padding: 30px 20px;
+
+		&:first-child {
+			background: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
+		}
+
+		&:last-child {
+			background: linear-gradient(180deg, #090b13 0%, rgba(9, 11, 19, 0.2) 100%);
 		}
 	}
 }
