@@ -1,6 +1,10 @@
 .booking {
 	padding: 84px 0;
 	background-color: $dark-blue-bg-color;
+
+	@media screen and (min-width: 768px) {
+		padding: 100px 0;
+	}
 }
 
 .booking__title {
@@ -12,13 +16,27 @@
 	text-align: center;
 
 	color: $quaternary-text-color;
+
+	@media screen and (min-width: 768px) {
+		text-align: start;
+	}
 }
 
 .booking__form {
-	text-align: center;
+	@media screen and (max-width: 767px) {
+		text-align: center;
+	}
 }
 
-.booking__label {
+.booking__wrapper {
+	@media screen and (min-width: 768px) {
+		display: flex;
+		gap: 30px;
+	}
+}
+
+.booking__label,
+.booking__message {
 	position: relative;
 	display: block;
 	margin-bottom: 44px;
@@ -28,6 +46,10 @@
 
 	@include font-line(11px, 15px);
 	text-transform: uppercase;
+
+	@media screen and (min-width: 768px) {
+		width: calc(100% / 2);
+	}
 
 	&:focus-within {
 		color: $quaternary-text-color;
@@ -60,6 +82,10 @@
 	&:focus {
 		border-color: $quaternary-text-color;
 	}
+}
+
+.booking__message {
+	width: 100%;
 }
 
 .booking__textarea {

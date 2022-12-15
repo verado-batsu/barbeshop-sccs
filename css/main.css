@@ -1152,6 +1152,11 @@ body {
     padding: 100px 0;
   }
 }
+@media screen and (min-width: 1200px) {
+  .barbers {
+    padding: 120px 0;
+  }
+}
 
 .barbers__title {
   margin-bottom: 44px;
@@ -1174,9 +1179,22 @@ body {
       -ms-flex-align: center;
           align-items: center;
 }
+@media screen and (min-width: 1200px) {
+  .barbers__list {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 30px;
+  }
+}
 
-.barbers__item:not(:last-child) {
-  margin-bottom: 64px;
+@media screen and (max-width: 1199px) {
+  .barbers__item:not(:last-child) {
+    margin-bottom: 64px;
+  }
 }
 
 .barbers-wrapper {
@@ -1235,6 +1253,11 @@ body {
     padding: 100px 0;
   }
 }
+@media screen and (min-width: 1200px) {
+  .portfolio {
+    padding: 120px 0;
+  }
+}
 
 .portfolio__reference {
   margin-bottom: 71px;
@@ -1282,6 +1305,11 @@ body {
   padding: 84px 0;
   background-color: #191c26;
 }
+@media screen and (min-width: 768px) {
+  .booking {
+    padding: 100px 0;
+  }
+}
 
 .booking__title {
   margin-bottom: 44px;
@@ -1292,12 +1320,29 @@ body {
   text-align: center;
   color: #ffffff;
 }
-
-.booking__form {
-  text-align: center;
+@media screen and (min-width: 768px) {
+  .booking__title {
+    text-align: start;
+  }
 }
 
-.booking__label {
+@media screen and (max-width: 767px) {
+  .booking__form {
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .booking__wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 30px;
+  }
+}
+
+.booking__label,
+.booking__message {
   position: relative;
   display: block;
   margin-bottom: 44px;
@@ -1307,10 +1352,18 @@ body {
   line-height: 1.3636363636;
   text-transform: uppercase;
 }
-.booking__label:focus-within {
+@media screen and (min-width: 768px) {
+  .booking__label,
+.booking__message {
+    width: 50%;
+  }
+}
+.booking__label:focus-within,
+.booking__message:focus-within {
   color: #ffffff;
 }
-.booking__label span {
+.booking__label span,
+.booking__message span {
   position: absolute;
   top: 0;
   left: 0;
@@ -1330,6 +1383,10 @@ body {
 }
 .booking__input:focus {
   border-color: #ffffff;
+}
+
+.booking__message {
+  width: 100%;
 }
 
 .booking__textarea {
