@@ -2,6 +2,33 @@
 	padding: 84px 0;
 }
 
+.about__container {
+	display: flex;
+}
+
+.about__list {
+	@media screen and (max-width: 767px) {
+		display: none;
+	}
+
+	width: calc((100% - 30px) / 2);
+}
+
+.about__item {
+	&:not(:last-child) {
+		margin-bottom: 30px;
+	}
+}
+
+.about__img {
+}
+
+.about__wrapper {
+	@media screen and (min-width: 768px) {
+		width: calc((100% - 30px) / 2);
+	}
+}
+
 .about__title {
 	margin-bottom: 20px;
 
@@ -17,6 +44,10 @@
 	@include font-line(16px, 26px);
 	letter-spacing: 0.02em;
 	color: $tertiary-text-color;
+
+	@media screen and (min-width: 768px) {
+		@include font-line(18px, 30px);
+	}
 }
 
 .about__text {
@@ -25,4 +56,8 @@
 	@include font-line($line-height: 26px);
 	letter-spacing: 0.02em;
 	color: $tertiary-text-color;
+
+	@media screen and (min-width: 768px) {
+		margin-bottom: 77px;
+	}
 }
