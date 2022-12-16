@@ -336,12 +336,27 @@ body {
 }
 
 @media screen and (min-width: 1200px) {
+  .wrap-sections {
+    background-color: #191c26;
+    background-image: url(../image/contacts/contacts_bg-desktop.png);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: 50%;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .container-book-contact {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+}
+@media screen and (min-width: 1200px) {
   .container-book-contact {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    background-color: linear-gradient(to left, #191c26 50%, url(../image/contacts/contacts_bg-desktop.png) 50%);
-    background-color: #111319;
   }
 }
 
@@ -1313,16 +1328,25 @@ body {
 
 .booking {
   padding: 84px 0;
+  background-color: #191c26;
 }
 @media screen and (min-width: 768px) {
   .booking {
     padding: 100px 0;
   }
 }
+@media screen and (min-width: 1200px) {
+  .booking {
+    background: none;
+    width: 50%;
+    padding-right: 30px;
+  }
+}
 
 @media screen and (min-width: 1200px) {
   .booking__container {
-    width: 50%;
+    margin: 0;
+    padding: 0;
   }
 }
 
@@ -1344,6 +1368,11 @@ body {
 @media screen and (max-width: 767px) {
   .booking__form {
     text-align: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .booking__form {
+    width: calc(50% - 30px);
   }
 }
 
@@ -1424,6 +1453,8 @@ body {
 
 .contacts {
   padding: 84px 0;
+  background-image: url(../image/contacts/contacts_bg.png);
+  background-color: #191c26;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -1431,6 +1462,16 @@ body {
 @media screen and (min-width: 768px) {
   .contacts {
     padding: 100px 0;
+    background-image: url(../image/contacts/contacts_bg-tablet.png);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contacts {
+    background: none;
+    width: 50%;
+    padding-top: 130px;
+    padding-left: 100px;
+    padding-bottom: 120px;
   }
 }
 
@@ -1449,15 +1490,23 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .contacts__container {
+    display: block;
     margin: 0;
     padding: 0;
-    width: 50%;
   }
 }
 
+.contacts__wrapper {
+  margin-bottom: 44px;
+}
 @media screen and (min-width: 768px) {
   .contacts__wrapper {
     width: 280px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contacts__wrapper {
+    margin-bottom: 70px;
   }
 }
 
@@ -1477,7 +1526,6 @@ body {
 }
 
 .contacts__address {
-  margin-bottom: 44px;
   font-style: normal;
 }
 

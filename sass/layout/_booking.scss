@@ -1,15 +1,23 @@
 .booking {
 	padding: 84px 0;
-	// background-color: $dark-blue-bg-color;
+	background-color: $dark-blue-bg-color;
 
 	@media screen and (min-width: 768px) {
 		padding: 100px 0;
+	}
+
+	@media screen and (min-width: 1200px) {
+		background: none;
+		width: calc(100% / 2);
+
+		padding-right: 30px;
 	}
 }
 
 .booking__container {
 	@media screen and (min-width: 1200px) {
-		width: calc(100% / 2);
+		margin: 0;
+		padding: 0;
 	}
 }
 
@@ -31,6 +39,10 @@
 .booking__form {
 	@media screen and (max-width: 767px) {
 		text-align: center;
+	}
+
+	@media screen and (min-width: 1200px) {
+		width: calc(50% - 30px);
 	}
 }
 

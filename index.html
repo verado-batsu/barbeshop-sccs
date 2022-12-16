@@ -507,83 +507,85 @@
 			</div>
 		</section>
 
-		<!-- Two sections -->
-		<div class="container container-book-contact">
-			<!-- Booking -->
-			<section class="booking">
-				<div class="container booking__container">
-					<h2 class="booking__title title">Online-booking</h2>
+		<div class="wrap-sections">
+			<!-- Two sections -->
+			<div class="container container-book-contact">
+				<!-- Booking -->
+				<section class="booking">
+					<div class="container booking__container">
+						<h2 class="booking__title title">Online-booking</h2>
 
-					<form class="booking__form" autocomplete="on">
+						<form class="booking__form" autocomplete="on">
 
-						<div class="booking__wrapper">
-							<label class="booking__label">
-								<span>Name*</span>
-								<input class="booking__input" type="text" name="name" required>
+							<div class="booking__wrapper">
+								<label class="booking__label">
+									<span>Name*</span>
+									<input class="booking__input" type="text" name="name" required>
+								</label>
+
+								<label class="booking__label">
+									<span>Phone*</span>
+									<input class="booking__input" type="tel" name="phone_number" required>
+								</label>
+							</div>
+
+							<label class="booking__message">
+								<span>Message</span>
+								<textarea class="booking__textarea" name="message"></textarea>
 							</label>
 
-							<label class="booking__label">
-								<span>Phone*</span>
-								<input class="booking__input" type="tel" name="phone_number" required>
-							</label>
+							<button class="btn dark-btn" type="submit">Send</button>
+						</form>
+					</div>
+				</section>
+
+				<!-- Contacts -->
+				<section id="contacts" class="contacts">
+					<div class="container contacts__container">
+						<div class="contacts__wrapper">
+							<h2 class="contacts__title title">Contacts</h2>
+
+							<address class="contacts__address address">
+								<ul class="address__list">
+									<li class="address__item">
+										<a class="address__link link address__map"
+											href="https://goo.gl/maps/ke87ZdEKPouREmjp7"
+											rel="noopener noreferrer nofollow" target="_blank">
+											<svg class="address__icon" width="24" height="24">
+												<use href="./image/svg.svg#icon-map-pin"></use>
+											</svg>
+											st. Vasilkovaya, 7A Kiev, 08132
+										</a>
+									</li>
+									<li class="address__item">
+										<a class="address__link link" href="tel:+380441111111">
+											<svg class="address__icon" width="24" height="24">
+												<use href="./image/svg.svg#icon-phone"></use>
+											</svg>
+											+38 044 111 11 11
+										</a>
+									</li>
+									<li class="address__item">
+										<a class="address__link link address__mail" href="mailto:barbershop@email.com">
+											<svg class="address__icon" width="24" height="24">
+												<use href="./image/svg.svg#icon-mail"></use>
+											</svg>
+											barbershop@email.com
+										</a>
+									</li>
+								</ul>
+							</address>
 						</div>
 
-						<label class="booking__message">
-							<span>Message</span>
-							<textarea class="booking__textarea" name="message"></textarea>
-						</label>
-
-						<button class="btn dark-btn" type="submit">Send</button>
-					</form>
-				</div>
-			</section>
-
-			<!-- Contacts -->
-			<section id="contacts" class="contacts">
-				<div class="container contacts__container">
-					<div class="contacts__wrapper">
-						<h2 class="contacts__title title">Contacts</h2>
-
-						<address class="contacts__address address">
-							<ul class="address__list">
-								<li class="address__item">
-									<a class="address__link link address__map"
-										href="https://goo.gl/maps/ke87ZdEKPouREmjp7" rel="noopener noreferrer nofollow"
-										target="_blank">
-										<svg class="address__icon" width="24" height="24">
-											<use href="./image/svg.svg#icon-map-pin"></use>
-										</svg>
-										st. Vasilkovaya, 7A Kiev, 08132
-									</a>
-								</li>
-								<li class="address__item">
-									<a class="address__link link" href="tel:+380441111111">
-										<svg class="address__icon" width="24" height="24">
-											<use href="./image/svg.svg#icon-phone"></use>
-										</svg>
-										+38 044 111 11 11
-									</a>
-								</li>
-								<li class="address__item">
-									<a class="address__link link address__mail" href="mailto:barbershop@email.com">
-										<svg class="address__icon" width="24" height="24">
-											<use href="./image/svg.svg#icon-mail"></use>
-										</svg>
-										barbershop@email.com
-									</a>
-								</li>
-							</ul>
-						</address>
+						<div class="contacts__box">
+							<p class="reference">Working hours</p>
+							<p class="contacts__time">
+								Every day from 9:00 to 22:00
+							</p>
+						</div>
 					</div>
-
-					<div class="contacts__box">
-						<p class="reference">Working hours</p>
-						<p class="contacts__time">
-							Every day from 9:00 to 22:00
-						</p>
-					</div>
-				</div>
-			</section>
+				</section>
+			</div>
 		</div>
 	</main>
 

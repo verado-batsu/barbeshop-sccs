@@ -1,12 +1,21 @@
+.wrap-sections {
+	@media screen and (min-width: 1200px) {
+		background-color: $dark-blue-bg-color;
+		background-image: url(../image/contacts/contacts_bg-desktop.png);
+		background-position: right;
+		background-repeat: no-repeat;
+		background-size: 50%;
+	}
+}
+
 .container-book-contact {
+	@media screen and (max-width: 1199px) {
+		margin: 0;
+		padding: 0;
+		width: 100%;
+	}
+
 	@media screen and (min-width: 1200px) {
 		display: flex;
-
-		background-color: linear-gradient(
-			to left,
-			$dark-blue-bg-color 50%,
-			url(../image/contacts/contacts_bg-desktop.png) 50%
-		);
-		background-color: $dark-bg-color;
 	}
 }
