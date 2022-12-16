@@ -2,6 +2,10 @@
 	padding: 44px 0;
 
 	color: $light-bg-color;
+
+	@media screen and (min-width: 768px) {
+		padding: 56px 0;
+	}
 }
 
 .footer__container {
@@ -16,6 +20,10 @@
 	@include font-line(11px, 15px);
 	letter-spacing: 0.2em;
 	color: $secondary-text-color;
+
+	@media screen and (min-width: 768px) {
+		padding: 0;
+	}
 }
 
 .footer__list {
@@ -31,6 +39,10 @@
 		margin-right: 40px;
 
 		background-color: $primary-text-color;
+	}
+
+	@media screen and (min-width: 768px) {
+		padding: 0;
 	}
 }
 

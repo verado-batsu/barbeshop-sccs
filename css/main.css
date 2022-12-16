@@ -1576,6 +1576,11 @@ body {
   padding: 44px 0;
   color: #f7f7f7;
 }
+@media screen and (min-width: 768px) {
+  .footer {
+    padding: 56px 0;
+  }
+}
 
 .footer__container {
   display: -webkit-box;
@@ -1593,6 +1598,11 @@ body {
   line-height: 1.3636363636;
   letter-spacing: 0.2em;
   color: #9da4bd;
+}
+@media screen and (min-width: 768px) {
+  .footer__copy {
+    padding: 0;
+  }
 }
 
 .footer__list {
@@ -1612,6 +1622,11 @@ body {
   width: 60px;
   margin-right: 40px;
   background-color: #303030;
+}
+@media screen and (min-width: 768px) {
+  .footer__list {
+    padding: 0;
+  }
 }
 
 .footer__item:not(:last-child) {
